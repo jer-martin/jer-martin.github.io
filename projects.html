@@ -9,26 +9,44 @@
 </head>
 <body class="light-theme">
     <div class="header">
-    <h1>Jeremy Martin</h1>
-    <p>Software Developer</p>
+        <h1 id="msg">Jeremy Martin</h1>
+        <p id="msg">Software Developer</p>
+        </div>
+        <div class="topnav">
+            <a id="msg" href="index.html">Blog</a>
+            <a id="msg" href="projects.html">Projects</a>
+            <a id="msg" href="#">Link</a>
+            <a id="msg" href="https://github.com/jer-martin" style="float:right">Github</a>
     </div>
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="#">Link</a>
-        <a href="https://github.com/jer-martin" style="float:right">Github</a>
-    </div>
-    <p id="msg">Current projects:</p>
-    <ul>
-        <li class="list">This Site</li>
-        
-    </ul>
-    <p id="msg">Completed projects:</p>
-    <ul>
-        <li class="list">Analyzer</li>
-        <li class="list">Buffer Overflow Lab</li>
-        <li>Modified Parser</li>
-    </ul>
+    <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Nhovas</h2>
+            <h5>Completed on Dec 6th, 2022</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Image of Nhovas code.</p>
+            <p>Nhovas is the name of the language that I programmed in my Introduction to Programming Languages class. We had to write a Lexer, Parser, Analyzer, Interpreter, and Generator, all inside of Java. For this project, I used IntelliJ Idea, and data structures provided by my professor.</p>
+          </div>
+          <div class="card">
+            <h2>Cache Simulation</h2>
+            <h5>Completed Dec 15th, 2022</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Image of Cache Simulation graph.</p>
+            <p>For this project, we had to write 3 different types of cache simulators, that simulated direct mapped, set associative (n-way), and fully associative caches. We had to implement a way to adjust cache size and set associativity, as well as map the performance of the three different caches onto a graph representing speed vs size. For this project, I used nvim and the command line. I used this time to start to get used to vim keybinds.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+        <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height:100px;">Image</div>
+            <p>I am a software developer that is currently based out of Gainesville, Florida. I am in my junior year of my Computer Science degree, on track to graduate in four years. I am well versed in C++ and Java, and am teaching myself Python, Swift, and HTML/CSS/JS.</p>
+        </div>
+        <div class="card">
+            <h3>Follow Me</h3>
+            <p>Some text..</p>
+        </div>
+        </div>
+      </div>
     <script src="app.js"></script>
     <noscript>You need to enable Javascript to view this site properly.</noscript>
 </body>

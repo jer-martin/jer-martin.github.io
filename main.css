@@ -40,6 +40,37 @@ li {
     --btnFontColor: rgb(39, 39, 39);
 }
 
+.header {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.picture {
+  text-align: center;
+}
 
 
 
@@ -57,7 +88,7 @@ li {
 
 
 
-/* CSS */
+/* CSS for BUTTON-20*/
 .button-20 {
   appearance: button;
   background-color: #4D4AE8;
@@ -75,7 +106,7 @@ li {
   line-height: 1.5;
   margin: 0;
   padding: .5rem 1rem;
-  text-align: center;
+  text-align: right;
   text-transform: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   user-select: none;

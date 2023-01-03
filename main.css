@@ -8,6 +8,11 @@ body {
   background: #f1f1f1;
 }
 
+.pagehead {
+  padding: 20px;
+  color: #736666;
+}
+
 /* Header/Blog Title */
 .header {
   padding: 30px;

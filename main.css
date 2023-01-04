@@ -21,6 +21,9 @@ body {
   padding: 30px;
   text-align: center;
   background: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 2px solid #ccc;
+  border-radius: 5px;
 }
 
 .header h1 {
@@ -76,6 +79,9 @@ body {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 2px solid #ccc;
+  border-radius: 5px;
 }
 
 /* Clear floats after the columns */

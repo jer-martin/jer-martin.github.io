@@ -9,9 +9,12 @@ body {
 }
 
 .pagehead {
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 7px; /* reduce bottom padding from 20px to 7px */
+  padding-left: 20px;
   color: #736666;
-}
+  }
 
 /* Header/Blog Title */
 .header {

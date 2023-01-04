@@ -2,10 +2,59 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: prisma;
+  src: url(prisma.ttf);
+}
+
+@font-face {
+  font-family: mont-reg;
+  src: url(Montserrat-Regular.ttf)
+}
+
+@font-face {
+  font-family: mont-bold;
+  src: url(Montserrat-Bold.ttf)
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(OpenSans-Light.ttf)
+}
+
+
 body {
   font-family: Arial;
   padding: 10px;
   background: #f1f1f1;
+}
+
+h1 {
+  font-family: prisma;
+}
+
+h2 {
+  font-family: mont-bold;
+}
+
+h3 {
+  font-family: mont-reg;
+}
+
+h5 {
+  font-family: mont-reg
+}
+
+a {
+  font-family: mont-reg;
+}
+
+p {
+  font-family: opensans;
+}
+
+#headerp {
+  font-family: mont-reg;
 }
 
 .pagehead {
@@ -14,6 +63,7 @@ body {
   padding-bottom: 7px; /* reduce bottom padding from 20px to 7px */
   padding-left: 20px;
   color: #736666;
+  font-family: mont-bold;
   }
 
 /* Header/Blog Title */

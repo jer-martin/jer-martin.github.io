@@ -2,7 +2,7 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 let snake = [{x: 150, y: 150}, {x: 140, y: 150}, {x: 130, y: 150}, {x: 120, y: 150}, {x: 110, y: 150}];
-let food = {x: 300, y: 300};
+
 let dx = 10;
 let dy = 0;
 let powerUp = {x: Math.floor(Math.random()*29)*10, y: Math.floor(Math.random()*29)*10};
@@ -11,40 +11,32 @@ let playing = false;
 let powerUpCounter = 0;
 
 function draw() {
-  
-  
   if (playing) {
-
-
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = '#999999';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#DDDDDD ';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     for (let i = 0; i < snake.length; i++) {
-      ctx.fillStyle = (i == 0) ? "green" : "white";
+      ctx.fillStyle = (i == 0) ? "green" : '#A5E7A2' ;
       ctx.fillRect(snake[i].x, snake[i].y, 10, 10);
-      ctx.strokeStyle = "red";
+      ctx.strokeStyle = '#75DB71';
       ctx.strokeRect(snake[i].x, snake[i].y, 10, 10);
     }
 
-    ctx.fillStyle = "blue";
-    ctx.fillRect(food.x, food.y, 10, 10);
+   
 
-    ctx.fillStyle = "yellow";
+    ctx.fillStyle = "red";
     ctx.fillRect(powerUp.x, powerUp.y, 10, 10);
-
-    snake.pop();
 
     let newHead = {x: snake[0].x + dx, y: snake[0].y + dy};
     snake.unshift(newHead);
 
-    
-
     if (newHead.x === powerUp.x && newHead.y === powerUp.y) {
       powerUp = {x: Math.floor(Math.random()*29)*10, y: Math.floor(Math.random()*29)*10};
-      snake.unshift({x: snake[0].x + dx, y: snake[0].y + dy});
       powerUpCounter++;
+    } else {
+      snake.pop();
     }
 
     if (newHead.x < 0 || newHead.x > canvas.width - 10 || newHead.y < 0 || newHead.y > canvas.height - 10) {
@@ -54,11 +46,23 @@ function draw() {
          dy = 0;
     }
 
-    
+    for (let i = 1; i < snake.length; i++) {
+      if (newHead.x === snake[i].x && newHead.y === snake[i].y) {
+        playing = false;
+        snake = [{x: 150, y: 150}, {x: 140, y: 150}, {x: 130, y: 150}, {x: 120, y: 150}, {x: 110, y: 150}];
+        dx = 10;
+        dy = 0;
+      }
+    }
   } else {
     showMenu();
   }
 }
+
+
+
+
+
 
 function showMenu() {
   ctx.font = "30px Arial";

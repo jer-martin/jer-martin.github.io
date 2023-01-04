@@ -71,7 +71,7 @@ p {
   padding: 30px;
   text-align: center;
   background: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   border: 2px solid #ccc;
   border-radius: 5px;
 }
@@ -133,6 +133,9 @@ p {
   border: 2px solid #ccc;
   border-radius: 5px;
 }
+
+
+
 
 /* Clear floats after the columns */
 .row:after {

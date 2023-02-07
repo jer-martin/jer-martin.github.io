@@ -8,20 +8,76 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body class="light-theme">
-    <div class="topnav">
-        <a href="home.html">Home</a>
-        <a class="active" href="news.html">News</a>
-        <a href="contact.html">Contact</a>
-        <a class="themeswitch">Dark</a>
-      </div>
+    <div class="header">
     <h1>Jeremy Martin</h1>
-    <h2>Software Developer</h2>
-    <p id="msg">Current projects:</p>
-    <ul>
-        <li class="list">Analyzer</li>
-        <li class="list">Buffer Overflow Lab</li>
-        <li class="list">Modified Parser</li>
-    </ul>
+    <p id="headerp">Software Developer</p>
+    </div>
+    <div class="topnav">
+        <a id="msg" href="index.html">Blog</a>
+        <a id="msg" href="projects.html">Projects</a>
+        <a id="msg" href="resume.html">Resume</a>
+        <a id="msg" href="https://github.com/jer-martin" style="float:right">Github</a>
+    </div>
+
+    <h2 class="pagehead">Blog</h2>
+
+    <div class="row">
+        <div class="leftcolumn">
+
+          <div class="card">
+            <h3>Website Dev Check In #2</h3>
+            <h5>Jan 4th, 2023</h5>
+            <img class="fakeimg" src="webshot_1-4.png" alt="A screenshot of the website layout as of 1/4/23">
+            <p>A photo of the current blog page layout.</p>
+            <p>Today's work was adding some nice looking details. I changed the fonts to something a little less basic, and then I added outlines and
+              box shadows to the cards.
+            </p>
+          </div>
+
+
+          <div class="card">
+            <h3>Internship Offers and Winter Break!</h3>
+            <h5>Jan 4th, 2023</h5>
+            <img class="fakeimg" src="trip_intern_shot.png" alt="A photo of my friends and I on our camping trip, along with FIS job offer!">
+            <p>A photo of my friends and I on our camping trip, along with FIS job offer!</p>
+            <p>Making my first proper blog post on here. I wanted to go over the last few months, as I have made large strides in my career. I applied to 
+              many internships (like 20 or so?) and I got interviews with 3 companies. Out of the 3 interviews I got, I recieved 2 offers! This is amazing 
+              news, honestly, as I was insanely worried about how I was going to do. I ended up accepting an offer from FIS Global, a fintech company based out 
+              of Jacksonville. Conveniently, the job is in Brown Deer, Wisconsin, which is very close to my family up in WI. Winter break was very cool. I couldn't 
+              go on the pure climbing trip to Rocktown like I wanted because of my shoulder, so I went camping with my friends from Jacksonville to a beautiful 
+              place called Cloudland Canyon, in Georgia. It was awe-inspiring to see such a massive gorge in the next state over from Florida. Anyways, I'm excited
+              for things to come!
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Website Dev Check In #1</h3>
+            <h5>Jan 3rd, 2023</h5>
+            <img class="fakeimg" src="webshot_1-3.png" alt="A screenshot of the website layout as of 1/3/23">
+            <p>A photo of the current blog page layout.</p>
+            <p>Today I got rid of the deprecated simple design that I once used for this page, and am starting work on a nicer looking implementation that teaches me proper CSS and HTML.</p>
+          </div>
+
+          
+
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h3>About Me</h3>
+            <img class="fakeimg" src="jeremy_waterfall.png" alt="Jeremy sitting in front of a waterfall">
+            <p>I am a software developer that is currently based out of Gainesville, Florida. I am in my junior year of my Computer Science degree, on track to graduate in four years. I am well versed in C++ and Java, and am teaching myself Python, Swift, and HTML/CSS/JS.</p>
+          </div>
+          <div class="card">
+            <h3>Follow Me</h3>
+            <button class="icobtn">  <a id="msg" href="https://twitter.com/jermartin_"><img class="icoimg" src="twitter.png" alt="twitter logo"></a></button>
+            <button class="icobtn">  <a id="msg" href="https://www.instagram.com/jer.martin/"><img class="icoimg" src="insta.png" alt="insta logo"></a></button>
+            <button class="icobtn">  <a id="msg" href="https://www.linkedin.com/in/jeremy-martin-036455233/"><img class="icoimg" src="linkedin.png" alt="LinkedIn logo"></a></button>
+            
+            
+          </div>
+        </div>
+      </div>
+
     <script src="app.js"></script>
     <noscript>You need to enable Javascript to view this site properly.</noscript>
 </body>

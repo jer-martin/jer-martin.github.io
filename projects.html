@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Martin</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="light-theme">
+    <div class="header">
+        <h1>Jeremy Martin</h1>
+        <p id="headerp">Software Developer</p>
+        </div>
+        <div class="topnav">
+            <a id="msg" href="index.html">Blog</a>
+            <a id="msg" href="projects.html">Projects</a>
+            <a id="msg" href="resume.html">Resume</a>
+            <a id="msg" href="https://github.com/jer-martin" style="float:right">Github</a>
+    </div>
+
+    <h2 class="pagehead">Projects</h2>
+
+    <div class="row">
+        <div class="leftcolumn">
+         
+          
+          
+
+
+          <div class="card">
+            <h3>Cache Simulation</h3>
+            <h5>Completed on Dec 15th, 2022</h5>
+            <img class="fakeimg" src="cachesimgraph_shot.png" alt="A screenshot of a cache sim graph">
+            <p>Image of Cache Simulation graph. I wrote this in Python, and it was very empowering to see how strong Python is right out of the box.</p>
+            <p>For this project, we had to write 3 different types of cache simulators, that simulated direct mapped, set associative (n-way), and fully associative caches. We had to implement a way to adjust cache size and set associativity, as well as map the performance of the three different caches onto a graph representing speed vs size. For this project, I used nvim and the command line. I used this time to start to get used to vim keybinds.</p>
+          </div>
+          
+          
+          <div class="card">
+            <h3>Nhovas</h3>
+            <h5>Completed on Dec 6th, 2022</h5>
+            <img class="fakeimg" src="nhovas_shot.png" alt="A screenshot of example code for Nhovas">
+            <p>Image of functional Nhovas code.</p>
+            <p>Nhovas is the name of the language that I programmed in my Introduction to Programming Languages class. We had to write a Lexer, Parser, Analyzer, Interpreter, and Generator, all inside of Java. This was an intense, semester long project that taught me a lot. For this project, I used IntelliJ Idea, and data structures provided by my professor.</p>
+          </div>
+
+          <div class="card">
+            <h3>Terpscraper</h3>
+            <h5>Completed on Oct 7th, 2022</h5>
+            <img class="fakeimg" src="terpscraper_shot.png" alt="A screenshot of Terpscraper output">
+            <p>Image of Terpscraper output.</p>
+            <p>This was a side project that was not school-related. I have a medical cannabis card, and the dispensaries make it difficult to actually know what you're getting when you buy it, so I decided to build my Python skills by creating a solution for that. I used Trulieve's website, as it doesn't have an API. I used BeautifulSoup 4 to webscrape the site, get all of the product urls, then scrape the product sites for a link to a pdf with the test results. I then used PyPDF2 to parse through these PDF files and extract THC and terpene percentages. I then collected all of these results and put them into a cleaned up text file. It has been used by myself and a few other people in the state with medical cards.</p>
+          </div> 
+          
+          
+        </div>
+
+
+        <div class="rightcolumn">
+        <div class="card">
+            <h3>About Me</h3>
+            <img class="fakeimg" src="jeremy_waterfall.png" alt="Jeremy sitting in front of a waterfall">
+            <p>I am a software developer that is currently based out of Gainesville, Florida. I am in my junior year of my Computer Science degree, on track to graduate in four years. I am well versed in C++ and Java, and am teaching myself Python, Swift, and HTML/CSS/JS.</p>
+        </div>
+        <div class="card">
+            <h3>Follow Me</h3>
+            <button class="icobtn">  <a id="msg" href="https://twitter.com/jermartin_"><img class="icoimg" src="twitter.png" alt="twitter logo"></a></button>
+            <button class="icobtn">  <a id="msg" href="https://www.instagram.com/jer.martin/"><img class="icoimg" src="insta.png" alt="insta logo"></a></button>
+            <button class="icobtn">  <a id="msg" href="https://www.linkedin.com/in/jeremy-martin-036455233/"><img class="icoimg" src="linkedin.png" alt="LinkedIn logo"></a></button>
+        </div>
+        </div>
+      </div>
+    <script src="app.js"></script>
+    <noscript>You need to enable Javascript to view this site properly.</noscript>
+</body>
+</html>
